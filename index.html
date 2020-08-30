@@ -9,28 +9,247 @@
 <body>
     <h2>Arrow.from()</h2>
     <h3>Example-1</h3>
+    <p>
+        var str= "abcdefg";
+ 
+var res= Array.from(str); <br>
+
+var res1= Array.from(str, mapFn); <br>
+function mapFn(x){ <br>
+    return Number(x);<br>
+}  <br>
+<br>
+var res2= Array.from(str, Number);<br>
+<br>
+var res3= Array.from(str, x=> Number(x));<br>
+<br>
+function myFunction(){<br>
+console.log(res);<br>
+console.log("by map function");<br>
+console.log(res1);<br>
+console.log("constructor way");<br>
+console.log(res2);<br>
+console.log("fat arrow way");<br>
+console.log(res3);<br>
+}<br>
+    </p>
     <button onclick="myFunction()">RESULT</button>
 
     <h3>Example-2</h3>
+    <p>
+        var num=[1,2,3,4,5,1,2,3,4,6,7];<br>
+        <br>
+let newSet= new Set(num);<br>
+let res4= Array.from(newSet)<br>
+<br>
+function myFunction1(){<br>
+    console.log(newSet);<br>
+    console.log(res4);<br>
+}<br>
+
+    </p>
     <button onclick="myFunction1()">RESULT</button>
 
     <h2>Arrow.of()</h2>
     <h3>Example-1</h3>
+    <p>
+        var num1= Array.of(10);<br>
+        <br>
+function myFunction2(){<br>
+console.log(num1);<br>
+}<br>
+    </p>
     <button onclick="myFunction2()">RESULT</button>
 
     <h3>Example-2</h3>
+    <p>
+        var num2= Array.of(1,2,3,4,5,6,4);<br>
+        <br>
+        function myFunction3(){<br>
+        console.log(num2);<br>
+        }<br>
+    </p>
     <button onclick="myFunction3()">RESULT</button>
 
     <h2>Arrow.isArray()</h2>
     <h3>Example-1</h3>
+    <p>
+        let name= ["Ram","Kritika","Ramu","Shyam"];<br>
+var num3= {na:1, ma:2, sa:3};<br>
+<br>
+<br>
+function myFunction4(){<br>
+    console.log(Array.isArray(name));<br>
+    console.log(Array.isArray(str));<br>
+    console.log(Array.isArray(num3));<br>
+    }<br>
+    </p>
     <button onclick="myFunction4()">RESULT</button>
 
     <h2>Arrow.prototype.concate()</h2>
     <h3>Example-1</h3>
+    <p>
+        let a=[1,2,3,4];<br>
+let b=[5,6,7,8];<br>
+let c=[9,10];<br>
+<br>
+const d=a.concat(b,c,1,[2,4]);<br>
+function myFunction5(){<br>
+console.log(d);<br>
+}<br>
+
+    </p>
+    
     <button onclick="myFunction5()">RESULT</button>
 
     <h3>Example-2</h3>
+    <p>
+        let name1=["John","Shon","Don","Ron"]<br>
+        <br>
+        const e= name.concat(name1);<br>
+        const f= name.concat();<br>
+        f.push("kritika");<br>
+        <br>
+        function myFunction6(){<br>
+            console.log(e);<br>
+            console.log(f)<br>
+            }<br>
+    </p>
     <button onclick="myFunction6()">RESULT</button>
+
+    <h2>Arrow.prototype.filter()</h2>
+    <h3>Example-1</h3>
+    <button onclick="myFunction7()">RESULT</button>
+
+    <h3>Example-2</h3>
+    <button onclick="myFunction8()">RESULT</button>
+
+    <h2>Arrow.prototype.forEach()</h2>
+    <h3>Example-1</h3>
+    <button onclick="myFunction9()">RESULT</button>
+
+    <h3>Example-2</h3>
+    <button onclick="myFunction10()">RESULT</button>
+    
+    <h2>Arrow.prototype.map()</h2>
+    <h3>Example-1</h3>
+    <button onclick="myFunction11()">RESULT</button>
+
+    <h3>Example-2</h3>
+    <button onclick="myFunction12()">RESULT</button>
+
+    <h2>Arrow.prototype.reduce()</h2>
+    <h3>Example-1</h3>
+    <button onclick="myFunction13()">RESULT</button>
+
+    <h3>Example-2</h3>
+    <button onclick="myFunction14()">RESULT</button>
+
+    <h2>Arrow.prototype.slice()</h2>
+    <h3>Example-1</h3>
+    <button onclick="myFunction15()">RESULT</button>
+
+    <h3>Example-2</h3>
+    <button onclick="myFunction16()">RESULT</button>
+
+    <h2>Arrow.prototype.splice()</h2>
+    <h3>Example-1</h3>
+    <button onclick="myFunction17()">RESULT</button>
+
+    <h3>Example-2</h3>
+    <button onclick="myFunction18()">RESULT</button>
+
+    <h2>Arrow.prototype.sort()</h2>
+    <h3>Example-1</h3>
+    <button onclick="myFunction19()">RESULT</button>
+
+    <h3>Example-2</h3>
+    <button onclick="myFunction20()">RESULT</button>
+
+    <h2>Arrow.prototype.fill()</h2>
+    <h3>Example-1</h3>
+    <button onclick="myFunction21()">RESULT</button>
+
+
+    <h2>Arrow.prototype.includes()</h2>
+    <h3>Example-1</h3>
+    <button onclick="myFunction22()">RESULT</button>
+
+
+    <h2>Arrow.prototype.join()</h2>
+    <h3>Example-1</h3>
+    <button onclick="myFunction23()">RESULT</button>
+
+    
+    <h2>Arrow.prototype.reverse()</h2>
+    <h3>Example-1</h3>
+    <button onclick="myFunction24()">RESULT</button>
+
+    <h3>Example-2</h3>
+    <button onclick="myFunction25()">RESULT</button>
+
+    <h2>Arrow.prototype.every()</h2>
+    <h3>Example-1</h3>
+    <button onclick="myFunction26()">RESULT</button>
+
+    <h3>Example-2</h3>
+    <button onclick="myFunction27()">RESULT</button>
+
+
+    <h2>Arrow.prototype.some()</h2>
+    <h3>Example-1</h3>
+    <button onclick="myFunction28()">RESULT</button>
+
+    <h3>Example-2</h3>
+    <button onclick="myFunction29()">RESULT</button>
+
+
+    <h2>Arrow.prototype.find()</h2>
+    <h3>Example-1</h3>
+    <button onclick="myFunction30()">RESULT</button>
+
+
+    <h2>Arrow.prototype.findIndex()</h2>
+    <h3>Example-1</h3>
+    <button onclick="myFunction31()">RESULT</button>
+
+
+    <h2>Arrow.prototype.indexOf()</h2>
+    <h3>Example-1</h3>
+    <button onclick="myFunction32()">RESULT</button>
+
+    <h3>Example-2</h3>
+    <button onclick="myFunction33()">RESULT</button>
+
+    
+    <h2>Arrow.prototype.lastIndexOf()</h2>
+    <h3>Example-1</h3>
+    <button onclick="myFunction34()">RESULT</button>
+
+    
+
+
+    <h2>Arrow.prototype.push()</h2>
+    <h3>Example-1</h3>
+    <button onclick="myFunction35()">RESULT</button>
+
+    <h2>Arrow.prototype.unshift()</h2>
+    <h3>Example-1</h3>
+    <button onclick="myFunction36()">RESULT</button>
+
+    <h2>Arrow.prototype.pop()</h2>
+    <h3>Example-1</h3>
+    <button onclick="myFunction37()">RESULT</button>
+
+    <h2>Arrow.prototype.shift()</h2>
+    <h3>Example-1</h3>
+    <button onclick="myFunction38()">RESULT</button>
+
+
+
+   
+
+    
 
 
 
